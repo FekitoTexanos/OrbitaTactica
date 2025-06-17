@@ -54,25 +54,44 @@ public class sc_Unit_Selection_Manager_TV : MonoBehaviour
             }
             else //if we dont hit an unit (ground)
             {
-                if (!Input.GetKey(KeyCode.LeftShift)) //if we dont hit an unit meanwhile multiselected method on, we dont unselect
+                if (Input.GetKey(KeyCode.LeftShift) == false) //if we dont hit an unit meanwhile multiselected method on, we dont unselect
                 {
                     DeselectAll();
                 }
                 
             }
         }
-    }
+
+        if (Input.GetMouseButtonDown(1) && unitSelected.Count >0)
+        {
+            RaycastHit hit;
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+
+            //if we hit ground
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground))
+            {
+
+                groundMarker.transform.position = hit.point;
+                groundMarker.SetActive(false);
+                groundMarker.SetActive(true);
+            }
+        }
+
+
+        }
 
     private void MultiSelected(GameObject unit)
     {
-        if (unitSelected.Contains(unit))
+        if (unitSelected.Contains(unit) == false)
         {
             unitSelected.Add(unit);
+            TriggerIndicatorUnit(unit, true);
             EnableMoveUnit(unit, true);
         }
         else
         {
             EnableMoveUnit(unit, false);
+            TriggerIndicatorUnit(unit, false);
             unitSelected.Remove(unit);
             
         }
@@ -83,7 +102,9 @@ public class sc_Unit_Selection_Manager_TV : MonoBehaviour
         foreach(var unit in unitSelected)
         {
             EnableMoveUnit(unit, false);
+            TriggerIndicatorUnit(unit, false);
         }
+        groundMarker.SetActive(false);
         unitSelected.Clear();
     }
 
@@ -91,11 +112,18 @@ public class sc_Unit_Selection_Manager_TV : MonoBehaviour
     {
         DeselectAll(); //we unselect all the previous selected units
         unitSelected.Add(unit);
+        TriggerIndicatorUnit(unit, true);
         EnableMoveUnit(unit, true);
     }
 
     private void EnableMoveUnit(GameObject unit, bool triggerMove)
     {
         unit.GetComponent<sc_SimpleUnit_Move_TV>().enabled = triggerMove;
+    }
+
+
+    public void TriggerIndicatorUnit(GameObject unit, bool isVisible)
+    {
+        unit.transform.GetChild(0).gameObject.SetActive(isVisible);
     }
 }
