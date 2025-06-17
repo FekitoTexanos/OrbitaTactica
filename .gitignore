@@ -1,3 +1,4 @@
+# Dossiers de build
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -6,9 +7,12 @@
 [Ll]ogs/
 MemoryCaptures/
 
-# Autres fichiers inutiles
+# Fichiers utilisateurs et config éditeurs
 UserSettings/
 .vscode/
+.vs/
+
+# Fichiers de projet inutiles
 *.csproj
 *.unityproj
 *.sln
@@ -17,4 +21,14 @@ UserSettings/
 *.booproj
 *.svd
 *.pdb
-.vs/
+*.suo
+*.opendb
+*.VC.db
+*.VC.opendb
+*.ilk
+*.cache
+*.log
+*.tlog
+*.exe
+*.dll
+*.tmp
