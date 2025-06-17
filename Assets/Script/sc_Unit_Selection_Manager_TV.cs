@@ -85,24 +85,21 @@ public class sc_Unit_Selection_Manager_TV : MonoBehaviour
         if (unitSelected.Contains(unit) == false)
         {
             unitSelected.Add(unit);
-            TriggerIndicatorUnit(unit, true);
-            EnableMoveUnit(unit, true);
+            SelectUnitToMove(unit, true);
         }
         else
         {
-            EnableMoveUnit(unit, false);
-            TriggerIndicatorUnit(unit, false);
+            SelectUnitToMove(unit, false);
             unitSelected.Remove(unit);
             
         }
     }
 
-    private void DeselectAll()
+    public void DeselectAll()
     {
         foreach(var unit in unitSelected)
         {
-            EnableMoveUnit(unit, false);
-            TriggerIndicatorUnit(unit, false);
+            SelectUnitToMove(unit, false);
         }
         groundMarker.SetActive(false);
         unitSelected.Clear();
@@ -112,8 +109,7 @@ public class sc_Unit_Selection_Manager_TV : MonoBehaviour
     {
         DeselectAll(); //we unselect all the previous selected units
         unitSelected.Add(unit);
-        TriggerIndicatorUnit(unit, true);
-        EnableMoveUnit(unit, true);
+        SelectUnitToMove(unit, true);
     }
 
     private void EnableMoveUnit(GameObject unit, bool triggerMove)
@@ -121,9 +117,24 @@ public class sc_Unit_Selection_Manager_TV : MonoBehaviour
         unit.GetComponent<sc_SimpleUnit_Move_TV>().enabled = triggerMove;
     }
 
+    private void SelectUnitToMove(GameObject unit, bool triggerMove)
+    {
+        TriggerIndicatorUnit(unit, triggerMove);
+        EnableMoveUnit(unit, triggerMove);
+    }
 
     public void TriggerIndicatorUnit(GameObject unit, bool isVisible)
     {
         unit.transform.GetChild(0).gameObject.SetActive(isVisible);
+    }
+
+    internal void DragSelect(GameObject unit)
+    {
+        if (unitSelected.Contains(unit) == false)
+        {
+            unitSelected.Add(unit);
+            TriggerIndicatorUnit(unit, true);
+            EnableMoveUnit(unit, true);
+        }
     }
 }
