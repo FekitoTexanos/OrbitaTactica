@@ -17,3 +17,4 @@ UserSettings/
 *.booproj
 *.svd
 *.pdb
+.vs/
