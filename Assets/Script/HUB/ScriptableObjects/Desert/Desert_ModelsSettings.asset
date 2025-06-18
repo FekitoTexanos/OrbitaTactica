@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98406ab96fe4b0b4283e5cf961e7c2b9, type: 3}
+  m_Name: Desert_ModelsSettings
+  m_EditorClassIdentifier: 
+  modelParent: {fileID: 687828221535841109, guid: 15622ee7ad25c0e4aaf9c8257d74098d, type: 3}
+  Models:
+  - Model: {fileID: 919132149155446097, guid: 67d2d9e9dc3649843945ab883add1b9d, type: 3}
+    minHeight: 0
+    arrayLenght: 180
+    modelMat: {fileID: 2100000, guid: c615b5d5243a64d4d81ddf311c001f73, type: 2}
+    minmaxSize: {x: 4, y: 6}
+    spaceNeeded: 1
+  - Model: {fileID: 919132149155446097, guid: 2ebc8b6020f470e4da4c4eb6092eeafa, type: 3}
+    minHeight: 1
+    arrayLenght: 3
+    modelMat: {fileID: 2100000, guid: 9799c3bb75c6339468d2ac7ea598f992, type: 2}
+    minmaxSize: {x: 10, y: 12}
+    spaceNeeded: 15
+  - Model: {fileID: 7272602681182220511, guid: 241e3ee17e9008a48862f2fe5526dd3a, type: 3}
+    minHeight: 1
+    arrayLenght: 2
+    modelMat: {fileID: 2100000, guid: 9799c3bb75c6339468d2ac7ea598f992, type: 2}
+    minmaxSize: {x: 10, y: 12}
+    spaceNeeded: 15

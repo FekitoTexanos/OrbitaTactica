@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98406ab96fe4b0b4283e5cf961e7c2b9, type: 3}
+  m_Name: Potager_ModelsSettings
+  m_EditorClassIdentifier: 
+  modelParent: {fileID: 687828221535841109, guid: 15622ee7ad25c0e4aaf9c8257d74098d, type: 3}
+  Models:
+  - Model: {fileID: 4517685823692935744, guid: 31726ca0bd1b1a74b8e3ce25a52c6c7e, type: 3}
+    minHeight: 0.5
+    arrayLenght: 64
+    modelMat: {fileID: 2100000, guid: 584e8963fa7e33440b975964f23c2288, type: 2}
+    minmaxSize: {x: 1, y: 7}
+    spaceNeeded: 3
+  - Model: {fileID: 5331243887816524642, guid: 55cc06185b74f7444a730b568d452634, type: 3}
+    minHeight: 1
+    arrayLenght: 92
+    modelMat: {fileID: 2100000, guid: 584e8963fa7e33440b975964f23c2288, type: 2}
+    minmaxSize: {x: 2, y: 7}
+    spaceNeeded: 3
+  - Model: {fileID: 4517685823692935744, guid: ed9fee279cd4ede4d8c9e45361748613, type: 3}
+    minHeight: 1
+    arrayLenght: 104
+    modelMat: {fileID: 2100000, guid: 584e8963fa7e33440b975964f23c2288, type: 2}
+    minmaxSize: {x: 2, y: 7}
+    spaceNeeded: 3
+  - Model: {fileID: 6653625707614912348, guid: 082959fcc00e23c4f8cc706e192d7d1e, type: 3}
+    minHeight: 0.2
+    arrayLenght: 36
+    modelMat: {fileID: 2100000, guid: f3d9d5a1cf6a93343bcbeb2af95591d5, type: 2}
+    minmaxSize: {x: 1, y: 2}
+    spaceNeeded: 0.5
+  - Model: {fileID: 5751469634140024523, guid: d2a3de0de34b5ce4dbfa4c9d82c9aae3, type: 3}
+    minHeight: 0.2
+    arrayLenght: 55
+    modelMat: {fileID: 2100000, guid: f3bbea6b634089a40aa338a84957d0b1, type: 2}
+    minmaxSize: {x: 1, y: 2}
+    spaceNeeded: 0.2
+  - Model: {fileID: 4625855688875971547, guid: 6cd616e2d869a744f8ef4f2723066eab, type: 3}
+    minHeight: 1.6
+    arrayLenght: 64
+    modelMat: {fileID: 2100000, guid: 23be8605c780af44e80d91c3b4d2b454, type: 2}
+    minmaxSize: {x: 1, y: 2}
+    spaceNeeded: 1
+  - Model: {fileID: 2351488389690098386, guid: c7be8a0ffc7620a429caabfd35001caa, type: 3}
+    minHeight: 1.6
+    arrayLenght: 64
+    modelMat: {fileID: 2100000, guid: 50d70a4b41f32e846af102231bcdd21c, type: 2}
+    minmaxSize: {x: 1, y: 2}
+    spaceNeeded: 1.5
+  - Model: {fileID: 1867520747069985288, guid: ee6f45e38243ae241b020407c4d4e9c7, type: 3}
+    minHeight: 1.6
+    arrayLenght: 70
+    modelMat: {fileID: 2100000, guid: 607f82d9fcc9a4d499e3ac1fc57b44e0, type: 2}
+    minmaxSize: {x: 1, y: 2}
+    spaceNeeded: 2.5

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98406ab96fe4b0b4283e5cf961e7c2b9, type: 3}
+  m_Name: Crababord_ModelsSettings
+  m_EditorClassIdentifier: 
+  modelParent: {fileID: 687828221535841109, guid: 15622ee7ad25c0e4aaf9c8257d74098d, type: 3}
+  Models:
+  - Model: {fileID: 1280818250237164632, guid: d74da1df2358b554dad7b5ae685cac24, type: 3}
+    minHeight: 1
+    arrayLenght: 111
+    modelMat: {fileID: 2100000, guid: 07b934fc4af17704d9589efc2f9894d9, type: 2}
+    minmaxSize: {x: 1, y: 2}
+    spaceNeeded: 15
+  - Model: {fileID: 5437206163800406913, guid: cd4ab7b23e12cb247ab98db94159f167, type: 3}
+    minHeight: 1
+    arrayLenght: 81
+    modelMat: {fileID: 2100000, guid: d6d408fe9a2a2e146a10b2e0f19d0e2e, type: 2}
+    minmaxSize: {x: 1, y: 5}
+    spaceNeeded: 10
+  - Model: {fileID: 7530794153946964983, guid: 4766d8be77e06c244a47f8419eab11a2, type: 3}
+    minHeight: 1
+    arrayLenght: 78
+    modelMat: {fileID: 2100000, guid: d6d408fe9a2a2e146a10b2e0f19d0e2e, type: 2}
+    minmaxSize: {x: 1, y: 5}
+    spaceNeeded: 5

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98406ab96fe4b0b4283e5cf961e7c2b9, type: 3}
+  m_Name: test03
+  m_EditorClassIdentifier: 
+  modelParent: {fileID: 687828221535841109, guid: 15622ee7ad25c0e4aaf9c8257d74098d, type: 3}
+  Models:
+  - Model: {fileID: 919132149155446097, guid: 67d2d9e9dc3649843945ab883add1b9d, type: 3}
+    minHeight: 0
+    arrayLenght: 1
+    modelMat: {fileID: 0}
+    minmaxSize: {x: 0, y: 0}
+    spaceNeeded: 0
