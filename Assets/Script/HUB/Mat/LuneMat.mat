@@ -65,7 +65,7 @@ Material:
     - _Color: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
     - _FaomTimeSpeed: {r: 0.01, g: 0.01, b: 0, a: 0}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
-    - _MinMax: {r: 80, g: 81.764, b: 0, a: 0}
+    - _MinMax: {r: 50, g: 55.11755, b: 0, a: 0}
     - _WaterColor: {r: 0, g: 0.27615774, b: 0.8679245, a: 0}
     - _color: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
