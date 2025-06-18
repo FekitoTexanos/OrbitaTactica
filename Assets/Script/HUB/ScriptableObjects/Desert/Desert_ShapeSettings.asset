@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetRadius: 50
   noiseLayers:
-  - enabled: 1
+  - enabled: 0
     useFisrtLayerAsMask: 1
     noiseSettings:
       filterType: 0
