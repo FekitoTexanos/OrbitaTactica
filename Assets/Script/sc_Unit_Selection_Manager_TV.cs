@@ -74,6 +74,7 @@ public class sc_Unit_Selection_Manager_TV : MonoBehaviour
                 groundMarker.transform.position = hit.point;
                 groundMarker.SetActive(false);
                 groundMarker.SetActive(true);
+                Debug.Log("je  touche le sol");
             }
         }
 

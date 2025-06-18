@@ -64,14 +64,14 @@ public class sc_PlanetMove : MonoBehaviour
         #region(PlanetRotation)
 
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(1))
             {
                 isMouseDown = true;
                 lastmousePos = Input.mousePosition;
 
             }
 
-            if (Input.GetMouseButton(0) && isMouseDown)
+            if (Input.GetMouseButton(1) && isMouseDown)
             {
                 Vector3 delta = Input.mousePosition - lastmousePos;
 
