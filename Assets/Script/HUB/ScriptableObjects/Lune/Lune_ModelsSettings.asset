@@ -13,16 +13,4 @@ MonoBehaviour:
   m_Name: Lune_ModelsSettings
   m_EditorClassIdentifier: 
   modelParent: {fileID: 687828221535841109, guid: 15622ee7ad25c0e4aaf9c8257d74098d, type: 3}
-  Models:
-  - Model: {fileID: 1397598121195331821, guid: 63eac5736f6153444a28ae330c3492ca, type: 3}
-    minHeight: 0
-    arrayLenght: 2
-    modelMat: {fileID: 2100000, guid: 1b8630c63811442439d9421184ce1beb, type: 2}
-    minmaxSize: {x: 1, y: 5}
-    spaceNeeded: 5
-  - Model: {fileID: 919132149155446097, guid: 36ea0a4f18c54554cb546f7209a28a66, type: 3}
-    minHeight: 0
-    arrayLenght: 38
-    modelMat: {fileID: 2100000, guid: 2d4fbcebc3dc201408763d049ef7d353, type: 2}
-    minmaxSize: {x: 1, y: 5}
-    spaceNeeded: 3
+  Models: []

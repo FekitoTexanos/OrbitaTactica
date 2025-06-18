@@ -39,7 +39,6 @@ public class sc_PlanetMove : MonoBehaviour
     Camera cam;
     private bool _isOkToZoom;
     private float zoomDirection;
-    private bool IsTuto = false;
     
     
 
@@ -51,6 +50,7 @@ public class sc_PlanetMove : MonoBehaviour
         globalzoom = cam.fieldOfView;
         localzoom = globalzoom;
         zoomDirection = globalzoom;
+        planet = Allplanet[0];
 
 
         
